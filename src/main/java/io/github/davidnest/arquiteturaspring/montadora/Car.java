@@ -1,5 +1,6 @@
 package io.github.davidnest.arquiteturaspring.montadora;
 
+import io.github.davidnest.arquiteturaspring.montadora.api.CarStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,5 +27,12 @@ public class Car {
                 + "Color: " + color + "\n"
                 + "Motor: " + motor + "\n"
                 + "Automaker: " + automaker;
+    }
+
+    public CarStatus doIgnition(Key key) {
+        if(key.getAutoMaker() != this.automaker) {
+            return new CarStatus("It's not possible to start the car with this key");
+        }
+        return new CarStatus("Car started successfully. Running with the engine: " + motor);
     }
 }
