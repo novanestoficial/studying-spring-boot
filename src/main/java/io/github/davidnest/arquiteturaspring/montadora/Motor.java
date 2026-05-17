@@ -17,11 +17,11 @@ public class Motor {
 
     @Override
     public String toString() {
-        return "MOTOR SETTINGS: \n"
-                + "Model: " + model + "\n"
-                + "Horse Power: " + horsesPower + "\n"
-                + "Cylinders: " + cylinders + "\n"
-                + "Litrage: " + litrage + "\n"
-                + "Type: " + type;
+        return "MOTOR SETTINGS: "
+                + " Model: " + model
+                + " Horse Power: " + horsesPower
+                + " Cylinders: " + cylinders
+                + " Litrage: " + litrage
+                + " Type: " + type;
     }
 }

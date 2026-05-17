@@ -20,7 +20,6 @@ public class Application {
         builder.bannerMode(Banner.Mode.OFF);
         builder.profiles("producao", "homologacao");
 
-
         builder.run(args);
 
 

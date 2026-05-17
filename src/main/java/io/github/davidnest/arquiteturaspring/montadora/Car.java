@@ -23,14 +23,14 @@ public class Car {
     @Override
     public String toString() {
         return "CAR SETTINGS: \n"
-                + "Model: " + model + "\n"
-                + "Color: " + color + "\n"
-                + "Motor: " + motor + "\n"
+                + "Model: " + model + '\n'
+                + "Color: " + color + '\n'
+                + "Motor: " + motor + '\n'
                 + "Automaker: " + automaker;
     }
 
     public CarStatus doIgnition(Key key) {
-        if(key.getAutoMaker() != this.automaker) {
+        if(key.getAutoMaker() == null || !key.getAutoMaker().equals(this.automaker)) {
             return new CarStatus("It's not possible to start the car with this key");
         }
         return new CarStatus("Car started successfully. Running with the engine: " + motor);
