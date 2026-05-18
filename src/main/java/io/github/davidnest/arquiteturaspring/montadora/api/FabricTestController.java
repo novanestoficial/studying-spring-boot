@@ -1,11 +1,7 @@
 package io.github.davidnest.arquiteturaspring.montadora.api;
 
-import io.github.davidnest.arquiteturaspring.montadora.BmwM4G80;
-import io.github.davidnest.arquiteturaspring.montadora.Car;
-import io.github.davidnest.arquiteturaspring.montadora.Key;
-import io.github.davidnest.arquiteturaspring.montadora.Motor;
+import io.github.davidnest.arquiteturaspring.montadora.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FabricTestController {
 
     @Autowired
-    @Qualifier("turboMotor")
+    @Turbo
     private Motor motor;
 
     @PostMapping

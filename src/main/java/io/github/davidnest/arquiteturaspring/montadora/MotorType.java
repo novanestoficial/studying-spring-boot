@@ -1,7 +1,7 @@
 package io.github.davidnest.arquiteturaspring.montadora;
 
 public enum MotorType {
-    ASPIRADO,
+    ASPIRATED,
     TURBO,
-    ELETRICO
+    ELETRIC
 }

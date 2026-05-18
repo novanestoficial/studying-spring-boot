@@ -1,6 +1,5 @@
 package io.github.davidnest.arquiteturaspring.montadora;
 
-import io.github.davidnest.arquiteturaspring.montadora.api.CarStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
